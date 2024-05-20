@@ -1,0 +1,16 @@
+[
+  {
+    "endpoint": "/api/v1/normies",
+    "method": "GET",
+    "response": {
+      "status": 200,
+      "body": [
+        {
+          "id": 1234,
+          "name": "Sandro",
+          "lastname": "dateas"
+        }
+      ]
+    }
+  }
+]

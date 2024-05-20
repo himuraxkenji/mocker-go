@@ -1,16 +1,20 @@
-[
-  {
-    "endpoint": "/api/v1/normies",
-    "method": "GET",
-    "response": {
-      "status": 200,
-      "body": [
-        {
-          "id": 1234,
-          "name": "Sandro",
-          "lastname": "dateas"
-        }
-      ]
+{
+  "port": ":8001",
+  "endpoints": [
+    {
+      "endpoint": "/api/v1/normies",
+      "method": "GET",
+      "response": {
+        "status": 200,
+        "body": [
+          {
+            "id": 1234,
+            "name": "Sandro",
+            "lastname": "dateas"
+          }
+        ]
+      }
     }
-  }
-]
+  ],
+  "server_name": "Dummy"
+}

@@ -1,44 +1,48 @@
-[
-  {
-    "endpoint": "/api/v1/users",
-    "method": "GET",
-    "response": {
-      "status": 200,
-      "body": [
-        {
-          "id": 1234,
-          "name": "Himura",
-          "lastname": "Kenji",
-          "admin": true
-        },
-        {
-          "id": 1234,
-          "name": "Sandro",
-          "lastname": "dateas",
-          "admin": false
-        }
-      ]
+{
+  "port": ":8000",
+  "endpoints": [
+    {
+      "endpoint": "/api/v1/users",
+      "method": "GET",
+      "response": {
+        "status": 200,
+        "body": [
+          {
+            "id": 1234,
+            "name": "Himura",
+            "lastname": "Kenji",
+            "admin": true
+          },
+          {
+            "id": 1234,
+            "name": "Sandro",
+            "lastname": "dateas",
+            "admin": false
+          }
+        ]
+      }
+    },
+    {
+      "endpoint": "/api/v1/users",
+      "method": "POST",
+      "response": {
+        "status": 201
+      }
+    },
+    {
+      "endpoint": "/api/v1/admin",
+      "method": "GET",
+      "response": {
+        "status": 200,
+        "body": [
+          {
+            "id": 1234,
+            "name": "Himura",
+            "lastname": "Kenji"
+          }
+        ]
+      }
     }
-  },
-  {
-    "endpoint": "/api/v1/users",
-    "method": "POST",
-    "response": {
-      "status": 201
-    }
-  },
-  {
-    "endpoint": "/api/v1/admin",
-    "method": "GET",
-    "response": {
-      "status": 200,
-      "body": [
-        {
-          "id": 1234,
-          "name": "Himura",
-          "lastname": "Kenji"
-        }
-      ]
-    }
-  }
-]
+  ],
+  "server_name": "Authentication"
+}
